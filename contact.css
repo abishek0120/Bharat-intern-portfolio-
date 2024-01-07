@@ -1,0 +1,209 @@
+@font-face {
+    font-family: myFont;
+    src: url(coolvetica1.otf);
+}
+@font-face {
+    font-family: myFont2;
+    src: url(unige.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: rgb(2, 0, 26);
+    padding: 0;
+    color:#fff;
+}
+
+* {
+    transition: all 0.5s ease;
+}
+
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items a {
+    display: block;
+    color: #d3d1d1;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-items a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 94, 39), 0 0 25px rgb(0, 83, 58), 0 0 5px rgb(255, 255, 255);
+}
+
+.name {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.name h1:hover {
+    text-shadow: 1px 1px 2px rgb(6, 94, 94), 0 0 25px rgb(6, 94, 94), 0 0 5px rgb(6, 94, 94);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top of the container */
+}
+
+.img-box {
+    height: auto;
+    overflow: visible;
+    width: 50%; /* Adjust the width as needed */
+    padding: 0 20px;
+    background-color: #141527;
+    border: 5px solid transparent;
+    text-align: center;
+}
+
+.info-box {
+    display: flex;
+    margin-top: 100px;
+    width:100%;
+    flex-direction: column;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    /* Add any additional styling for the .info-box */
+    height: auto;
+}
+
+.container {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.element {
+    width: auto; /* Adjust the width based on your preference */
+    margin:0;
+    text-align: center;
+    padding: 20px 0 0px 20px;
+    box-sizing: border-box;
+    text-align: left;
+    text-decoration: none;
+}
+.icons{
+    float:left;
+    margin-right:10px;
+    max-width: 100px;
+    width: 80%;
+}
+.icons:hover{
+    width:120%;
+    transition:0.2s ease-in-out ;
+    border: 2px double white;
+    border-radius: 20px;
+}
+
+.element h2{
+    color:#ffffff;
+}
+
+.container a {
+    text-decoration: none;
+}
+.element h2:hover{
+    color:#f8852c;
+}
+
+#photo {
+    width: 80%;
+    filter: contrast(110%);
+    border-radius: 50%;
+}
+
+.pain {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.bold {
+    font-family: myFont2;
+    font-size: 60px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    background: linear-gradient(to right, #cc5333, #23074d);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Add this line for Safari */
+    color: transparent;
+    letter-spacing: -1px;
+}
+
+.bold:hover {
+    background-image: linear-gradient(to left, #1737a3, #cc007e);
+}
+
+#contact {
+    color: #f8852c;
+    text-shadow: 0px 0px 15px #f8852c;
+}
+/* copy this for comment motherfucker */
+
+.bottom {
+    display: block;
+    height: 30vh;
+    text-align: center;
+    background-color: #141527;
+}
+
+.final {
+    font-size: 130%;
+    position: relative;
+    top: 15%;
+}
+@media screen and (max-width: 500px) {
+    .nav-items {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-items a {
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+    }
+    .main {
+        display:block;
+        margin:20px 0;
+    }
+    .info-box .lines{
+        font-size:13px ;
+    }
+
+    .img-box{
+        width:100%;
+    }
+
+    #photo{
+        width:60%;
+    }
+
+
+}

@@ -1,0 +1,213 @@
+@font-face {
+    font-family: myFont;
+    src: url(coolvetica1.otf);
+}
+@font-face {
+    font-family: myFont2;
+    src: url(LEMONMILK-Light.otf);
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: rgb(2, 0, 26);
+    color: #ffffff;
+}
+*{
+    transition: all .5s ease;
+}
+
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.fuck {
+    display: block;
+    color: #929292;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+
+
+.fuck:hover{
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(0, 94, 39), 0 0 25px rgb(0, 83, 58), 0 0 5px rgb(255, 255, 255);
+}
+
+#project{
+    color:#f8852c;
+    text-shadow: 0px 0px 15px #f8852c;
+}
+
+
+.name {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+.name h1:hover {
+    text-shadow: 1px 1px 20px rgb(6, 94, 94), 0 0 25px rgb(6, 94, 94), 0 0 5px rgb(6, 94, 94);
+}
+
+.main {
+    font-family: myFont;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    height: auto;
+    overflow: auto;
+    width: 100%;
+    min-width: 80px;
+    text-align: center;
+
+}
+
+
+.bold {
+    font-family: myFont2;
+    font-size: 60px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    background: linear-gradient(to right, #cc5333, #23074d);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Add this line for Safari */
+    color: transparent;
+    letter-spacing: -1px;
+}
+
+.bold:hover {
+    background-image: linear-gradient(to left, #1737a3, #cc007e);
+}
+
+
+.lines{
+    display: block;
+    margin:0px;
+    height:auto;
+    width:100%;
+    overflow:auto;
+}
+
+.elements{
+    display:flex;
+    margin:30px 0px 0px 20px;
+    padding: 20px 0;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+
+}
+/* copy this for comment motherfucker */
+.text {
+    height: auto;
+    display:inline-block;
+    overflow: auto;
+    width: 100%; /* Adjust the width as needed */
+    max-width: 900px;
+    margin:0;
+    text-align:left;
+
+}
+.text h1{
+    font-family: myFont2;
+    padding:10px 0 0 10px ;
+    font-size:240%;
+    background: linear-gradient(to right, #0c1caa, #f8852c);
+    background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text p{
+    font-size:180%
+}
+.text p:hover{
+    text-shadow:0px 0px 15px aquamarine ;
+}
+.elements:hover{
+    background-color: #09090c;
+    border-color: aquamarine;
+    box-shadow:0px 0px 15px aquamarine ;
+}
+
+.elements:nth-child(even){
+    margin:30px 20px 0px 0px;
+    flex-direction: row-reverse;
+}
+
+.img {
+    display: inline-block;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+}
+
+.img img{
+    margin: 10px 0;
+    width:100%;
+}
+
+.bottom{
+    display: block;
+    height: 30vh;
+    text-align: center;
+    background-color: #141527 ;
+}
+
+.final{
+    font-size:130%;
+    position: relative;
+    top:15%;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-items {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-items a {
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .bold{
+        font-size:50px;
+    }
+    .elements{
+        margin:40px 0;
+        padding:0 10px;
+        align-items:center;
+        display: flex;
+        font-size: 14px;
+        flex-direction: column-reverse;
+    }
+    .elements:nth-child(even){
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+    .img img{
+        width:85%;
+    }
+}
